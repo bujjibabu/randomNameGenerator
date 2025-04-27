@@ -1,0 +1,113 @@
+/* Money paper animation styles */
+.paper {
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  opacity: 0;
+  z-index: 3;
+  animation: paper-fall 8s ease-out forwards;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* US Dollar style */
+.paper-0 {
+  animation-delay: 0.2s;
+  left: 15%;
+  background: linear-gradient(135deg, #c9e8c0, #b8d9af);
+  width: 22px;
+  height: 10px;
+}
+
+/* Indian Rupee style */
+.paper-1 {
+  animation-delay: 0.7s;
+  left: 25%;
+  background: linear-gradient(135deg, #f6e7d0, #f1dc9c);
+  width: 20px;
+  height: 9px;
+}
+
+/* Euro style */
+.paper-2 {
+  animation-delay: 0.4s;
+  left: 35%;
+  background: linear-gradient(135deg, #bfd3ea, #9cb8d8);
+  width: 21px;
+  height: 11px;
+}
+
+/* US Dollar style */
+.paper-3 {
+  animation-delay: 1.0s;
+  left: 45%;
+  background: linear-gradient(135deg, #c9e8c0, #b8d9af);
+  width: 19px;
+  height: 9px;
+}
+
+/* Indian Rupee style */
+.paper-4 {
+  animation-delay: 0.3s;
+  left: 55%;
+  background: linear-gradient(135deg, #f6e7d0, #f1dc9c);
+  width: 22px;
+  height: 10px;
+}
+
+/* Euro style */
+.paper-5 {
+  animation-delay: 0.8s;
+  left: 65%;
+  background: linear-gradient(135deg, #bfd3ea, #9cb8d8);
+  width: 20px;
+  height: 10px;
+}
+
+/* US Dollar style */
+.paper-6 {
+  animation-delay: 0.5s;
+  left: 75%;
+  background: linear-gradient(135deg, #c9e8c0, #b8d9af);
+  width: 23px;
+  height: 11px;
+}
+
+/* Indian Rupee style */
+.paper-7 {
+  animation-delay: 1.2s;
+  left: 85%;
+  background: linear-gradient(135deg, #f6e7d0, #f1dc9c);
+  width: 21px;
+  height: 10px;
+}
+
+@keyframes paper-fall {
+  0% {
+    opacity: 0;
+    top: -10px;
+    transform: rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+    transform: rotate(45deg);
+  }
+  25% {
+    transform: rotate(90deg) translateX(15px);
+  }
+  40% {
+    transform: rotate(180deg) translateX(-15px);
+  }
+  60% {
+    transform: rotate(270deg) translateX(10px);
+  }
+  75% {
+    opacity: 1;
+    transform: rotate(300deg);
+  }
+  100% {
+    opacity: 0;
+    top: 100%;
+    transform: rotate(360deg) translateX(-10px);
+  }
+}
